@@ -2,3 +2,38 @@
   margin: 0;
   padding: 0;
 }
+body {
+  background-color: rgb(240, 206, 231);
+  width: 100%;
+}
+.body_wrapper {
+  background-color: green;
+  max-width: 1300px;
+  margin: auto;
+}
+.logo-text {
+  font-family: "Lucida Sans", sans-serif;
+  text-transform: uppercase;
+  font-size: 40px;
+  /* line-height: 1; */
+}
+.header {
+  background-color: rgb(210, 247, 151);
+  /* max-width: 1300px; */
+  /* margin: auto; */
+  padding: 30px;
+}
+
+main {
+  background-color: rgb(136, 213, 248);
+  /* max-width: 1300px; */
+  /* margin: auto; */
+  padding: 30px;
+}
+
+.footer {
+  background-color: rgb(221, 143, 143);
+  /* max-width: 1300px; */
+  /* margin: auto; */
+  padding: 30px;
+}
