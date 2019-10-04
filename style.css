@@ -3,37 +3,139 @@
   padding: 0;
 }
 body {
-  background-color: rgb(240, 206, 231);
+  /* ____ DELETE COLOR ____ */
+  /* background-color: rgb(240, 206, 231); */
+  background: calc(50vw - 650px) 0 url("./assets/img/background.png") no-repeat;
+  /* width: 100vw; */
   width: 100%;
 }
 .body_wrapper {
-  background-color: green;
+  /* ____ DELETE COLOR ____ */
+  /* background-color: green; */
   max-width: 1300px;
   margin: auto;
+}
+
+.header {
+  /* ____ DELETE COLOR ____ */
+  /* background-color: rgb(210, 247, 151); */
+  /* max-width: 1300px; */
+  /* margin: auto; */
+  /* padding: 30px; */
+  width: 1020px;
+  margin: 0 auto;
+  display: grid;
+  grid-template: auto / 316px 461px;
+  grid-gap: 243px;
+}
+
+.logo {
+  float: left;
+  margin-top: 28px;
+  display: grid;
+  grid-template: auto / 83px auto;
+}
+.logo > * {
+  float: left;
 }
 .logo-text {
   font-family: "Lucida Sans", sans-serif;
   text-transform: uppercase;
-  font-size: 40px;
+  font-size: 41px;
+  color: #FFFFFF;
+  margin: 23px 0 12px 4px;
   /* line-height: 1; */
+  /* letter-spacing: 0.005em; */
+  /* text-shadow: 0 2px 0 rgba(0,0,0,.42); */
 }
-.header {
-  background-color: rgb(210, 247, 151);
-  /* max-width: 1300px; */
-  /* margin: auto; */
-  padding: 30px;
+
+
+.nav-container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
 }
+.nav {
+  float: right;
+  width: 453px;
+  height: 41px;
+  background-color: #F5C506;
+
+  display: grid;
+  grid-template: auto / 172px 133px 148px;
+  font-family: 'Segoe WP', sans-serif;
+  font-size: 17.05px;
+  line-height: 40px;
+  color: #9B7D08;
+}
+.nav a {
+  text-decoration: none!important;
+}
+.nav-item {
+  border-right: 2px solid rgba(112,112,112,.1);
+  text-transform: uppercase;
+  color: #9B7D08;
+}
+.nav-item:hover {
+  background-color: #fbd53e;
+}
+
+.about {
+  background: 39px 11px url("./assets/img/top-menu_about.svg") no-repeat;
+  text-indent: 69px;
+}
+.services {
+  background: 15px 11px url("./assets/img/top-menu_services.svg") no-repeat;
+  text-indent: 43px;
+}
+.contact {
+  background: 18px 11px url("./assets/img/top-menu_contact.svg") no-repeat;
+  text-indent: 50px;
+  border-right: 0;
+}
+
+
+
+
+.slider {
+  display: grid;
+  grid-template: auto / 549px 401px;
+  grid-gap: 50px;
+  margin-top: 56px;
+  justify-content: center;
+}
+
+.h1_wrapper {
+  font-size: 40px;
+  font-family: "Asap Symbol", sans-serif;
+  color: #F5C506;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 80px;
+}
+.h1_wrapper span {
+  color: #FFF;
+}
+
+
+
 
 main {
-  background-color: rgb(136, 213, 248);
-  /* max-width: 1300px; */
-  /* margin: auto; */
-  padding: 30px;
+  width: 1300px;
+  margin: 0 auto;
+  display: grid;
+  color: #FFF;
+  /* ____ DELETE COLOR ____ */
+  /* background-color: rgb(210, 247, 151); */
 }
 
+
+
 .footer {
-  background-color: rgb(221, 143, 143);
+  /* ____ DELETE COLOR ____ */
+  /* background-color: rgb(221, 143, 143); */
   /* max-width: 1300px; */
   /* margin: auto; */
   padding: 30px;
+  color: #FFF;
 }

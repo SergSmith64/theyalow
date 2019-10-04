@@ -4,3 +4,10 @@
   font-weight: normal;
   font-style: italic;
 }
+@font-face {
+  font-family: 'Asap Symbol';
+  src: url('Asap-Symbol.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+}
+
