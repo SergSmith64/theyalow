@@ -6,21 +6,21 @@ body {
   /* ____ DELETE COLOR ____ */
   /* background-color: rgb(240, 206, 231); */
   background: calc(50vw - 650px) 0 url("./assets/img/background.jpg") no-repeat;
-  /* width: 100vw; */
-  width: 100%;
+  width: 100vw;
+  /* width: 100%; */
 }
 
+
 .body_wrapper {
+  max-width: 1300px;
+  margin: 0 auto;
+  width: 100%;
+  overflow: hidden;
   /* ____ DELETE COLOR ____ */
   /* background-color: green; */
-  max-width: 1300px;
-  margin: auto;
 }
 
 .header {
-    /* max-width: 1300px; */
-  /* margin: auto; */
-  /* padding: 30px; */
   width: 1020px;
   margin: 0 auto;
   display: grid;
@@ -174,7 +174,7 @@ main {
 }
 #video {
   position: absolute;
-  background: #000;
+  /* background: #000; */
 }
 
 .player {
@@ -294,6 +294,7 @@ main {
   display: grid;
   grid-template: auto / repeat(3, 340px);
   justify-content: center;
+  margin-top: 68px;
   /* ____ DELETE COLOR ____ */
   /* background-color: darkred; */
 }
@@ -310,9 +311,11 @@ main {
 .icon-container h2 {
   font-family: 'Segoe UI', sans-serif;
   font-weight: 200;
+  color: #000;
   text-transform: uppercase;
   font-size: 27px;
   letter-spacing: 0.01em;
+  padding-bottom: 31px;
 }
 
 
@@ -350,6 +353,46 @@ main {
   grid-template: 110px 319px 43px 15px / 1023px;
   justify-content: center;
 }
+#news-area h1 {
+  font-family: 'PT Sans', sans-serif;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 100;
+  letter-spacing: 0.01em;
+  font-size: 37px;
+  line-height: 110px;
+  height: 110px;
+  margin: 0;
+  padding-left: 2px;
+}
+
+#news-area > div {
+  display: grid;
+  grid-template: auto / 656px 329px;
+  grid-gap: 34px;
+}
+.news-item-1 {
+  display: grid;
+  grid-template: 233px 86px / 341px 315px;
+}
+.news-item-1 > div {
+  background: #ed9e03;
+  width: 100%;
+  height: 100%;
+}
+.news-item-1 h2 {
+  font-family: 'Segoe WP Light', sans-serif;
+  font-weight: 100;
+  font-size: 29px;
+  letter-spacing: 0.012em;
+  line-height: 38px;
+  margin-top: 0;
+  color: #fff;
+  padding-left: 30px;
+  margin-bottom: 0px;
+  background: #ed9e03;
+  padding-top: 16px;
+}
 
 
 
@@ -362,8 +405,8 @@ main {
 
 
 .footer {
-  /* max-width: 1300px; */
-  /* margin: auto; */
+  max-width: 1300px;
+  margin: auto;
   background: #4c4c4c;
   padding: 30px;
   color: #FFF;
