@@ -22,9 +22,9 @@
 
         <div class="nav-container">
             <div class="nav">
-                <a href="#"><div class="nav-item about">about us</div></a>
-                <a href="#"><div class="nav-item services">services</div></a>
-                <a href="#"><div class="nav-item contact">contact</div></a>
+                <a href="#"><div class="nav-item about">About us</div></a>
+                <a href="#"><div class="nav-item services">Services</div></a>
+                <a href="#"><div class="nav-item contact">Contact</div></a>
             </div>
         </div>
 
@@ -34,17 +34,62 @@
 
     <main>
         <section id="video-area">
-            <div class="ctrl-container">
 
+            <div class="ctrl-container">
+                <div class="ctrl">
+                    <button class="ctrl-i ctrl-l"></button>
+                    <button class="ctrl-i ctrl-r"></button>
+                </div>
             </div>
-            <div class="slider">
-                <div class="video-container">
+
+
+            <div class="banners">
+              <div class="video-container">
+                <video id="video" width="549px" height="327px" poster="./assets/img/zastavka.png">
+                    <source src="./assets/img/rio.mp4" type="video/mp4">
+                </video>
+                <div class="player">
+                    <div id="bpbc" class="play-btn-container">
+                        <button id="bpb" class="play-btn">
+                            <img src="./assets/img/icon-playbtn.svg"/>
+                        </button>
+                    </div>
+
+
+                    <div class="player-controls">
+                        <button type="button" id="play-pause">
+                            <img id="isNotPlaying" src="./assets/img/icon-playbtn.svg"/>
+                            <img id="isPlaying" src="./assets/img/icon-pausebtn.svg"/>
+                        </button>
+                        <input type="range" id="seek-bar" value="0"/>
+                        <button type="button" id="mute">
+                            <img id="isMuted" src="./assets/img/icon-sound-off.svg"/>
+                            <img id="isNotMuted" src="./assets/img/icon-sound-on.svg"/>
+                        </button>
+                    </div>
+
 
                 </div>
+            </div>
                 
                 <div class="h1_wrapper">
                     <h1>The cool <span>the minimal</span></h1>
                 </div>
+            </div>
+        </section><!-- /video-area -->
+
+        <section id="icon-area">
+            <div class="icon-container ic-co-1">
+                <img src="./assets/img/icon-design.svg">
+                <h2>Better design</h2>
+            </div>
+            <div class="icon-container ic-co-2">
+                <img src="./assets/img/icon-customise.svg">
+                <h2>Customise</h2>
+            </div>
+            <div class="icon-container ic-co-3">
+                <img src="./assets/img/icon-free.svg">
+                <h2>Its free</h2>
             </div>
         </section>
 
@@ -52,7 +97,9 @@
     </main>
 
 
-    <footer class="footer">Foot___Foot___Foot___Foot___Foot___Foot___</footer>
+    <footer class="footer">
+      <img src="./assets/img/footer-logo.png" alt="Logo">
+    </footer>
   </div>
 </body>
 </html>

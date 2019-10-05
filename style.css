@@ -5,10 +5,11 @@
 body {
   /* ____ DELETE COLOR ____ */
   /* background-color: rgb(240, 206, 231); */
-  background: calc(50vw - 650px) 0 url("./assets/img/background.png") no-repeat;
+  background: calc(50vw - 650px) 0 url("./assets/img/background.jpg") no-repeat;
   /* width: 100vw; */
   width: 100%;
 }
+
 .body_wrapper {
   /* ____ DELETE COLOR ____ */
   /* background-color: green; */
@@ -17,9 +18,7 @@ body {
 }
 
 .header {
-  /* ____ DELETE COLOR ____ */
-  /* background-color: rgb(210, 247, 151); */
-  /* max-width: 1300px; */
+    /* max-width: 1300px; */
   /* margin: auto; */
   /* padding: 30px; */
   width: 1020px;
@@ -27,6 +26,8 @@ body {
   display: grid;
   grid-template: auto / 316px 461px;
   grid-gap: 243px;
+  /* ____ DELETE COLOR ____ */
+  /* background-color: rgb(210, 247, 151); */
 }
 
 .logo {
@@ -60,7 +61,7 @@ body {
   width: 453px;
   height: 41px;
   background-color: #F5C506;
-
+  box-shadow: -4px -5px 0px rgba(245, 197, 6, 0.27), -8px -8px 0px rgba(245, 197, 6, .27);
   display: grid;
   grid-template: auto / 172px 133px 148px;
   font-family: 'Segoe WP', sans-serif;
@@ -97,12 +98,14 @@ body {
 
 
 
-.slider {
+.banners {
   display: grid;
   grid-template: auto / 549px 401px;
   grid-gap: 50px;
   margin-top: 56px;
   justify-content: center;
+  /* ____ DELETE COLOR ____ */
+  /* background-color: lightpink; */
 }
 
 .h1_wrapper {
@@ -117,7 +120,40 @@ body {
   color: #FFF;
 }
 
+/* ____________ УШКИ: ВЛЕВО - ВПРАВО _____________ */
 
+.ctrl-container {
+  position: absolute;
+  height: 57px;
+  top: 300px;
+}
+.ctrl {
+  width: 100vw;
+  height: 57px;
+  top: 300px;
+  margin: 0 auto;
+  max-width: 1300px;
+}
+.ctrl-i {
+  width: 32px;
+  height: 57px;
+  background-repeat: no-repeat;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+.ctrl-l {
+  float: left;
+  background: 8px url(./assets/img/icon-left.svg) rgba(245, 197, 6, .73) no-repeat;
+}
+.ctrl-r {
+  float: right;
+  background: 11px url(./assets/img/icon-right.svg) rgba(245, 197, 6, 1) no-repeat;
+}
+
+
+
+/* ________ MAIN __________ */
 
 
 main {
@@ -126,16 +162,211 @@ main {
   display: grid;
   color: #FFF;
   /* ____ DELETE COLOR ____ */
-  /* background-color: rgb(210, 247, 151); */
+  /* background-color: lightseagreen; */
+}
+
+
+/* _______ ВИДЕО ________ */
+.video-container {
+  box-shadow: 0 0 5px rgba(0,0,0,.225);
+  /* ____ DELETE COLOR ____ */
+  /* background-color: darkred; */
+}
+#video {
+  position: absolute;
+  background: #000;
+}
+
+.player {
+  height: 327px;
+  display: grid;
+  grid-template: 278px auto / auto;
+}
+.play-btn-container {
+  display: flex;
+  justify-content: center;
+}
+.play-btn {
+  width: 67px;
+  height: 67px;
+  background: #F5C506;
+  opacity: .72;
+  border-radius: 40px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  margin-top:130px;
+  align-items: center;
+  justify-content: center;
+}
+.play-btn img {
+  padding-left: 6px;
+  height: 41px;
+}
+.player-controls {
+  z-index: 10;
+  display: grid;
+  grid-template: auto / 27px 428px auto;
+  padding-left: 29px;
+  opacity: 0.99;
+  transition: opacity .3s ease-in-out;
+}
+.video:hover .player-controls, .video:hover .play-btn {
+  opacity: 0.99;
+  transition: opacity .3s ease-in-out;
+}
+.player-controls input[type="range"] {
+  -webkit-appearance: none;
+  margin-top: 8px;
+  margin-left: 24px;
+  width: 404px;
+  background: rgba(245,197,6,0.28);
+  border-radius: 5px;
+  height: 12px;
+}
+.player-controls input[type="range"]:focus {
+  outline: none;
+}
+
+.player-controls input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: linear-gradient(90deg, rgba(245,197,6,1) 0%, rgba(245,197,6,1) var(--place), rgba(245,197,6,0.28) var(--place), rgba(245,197,6,0.28) 100%);
+  border-radius: 5px;
+  height: 12px;
+}
+.player-controls input[type="range"]::-webkit-slider-thumb {
+  height: 16px;
+  width: 16px;
+  border-radius: 3px;
+  background: rgba(0,0,0,0);
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -14px;
+}
+.player-controls > * {
+  cursor: pointer;
+}
+
+/* ______ КНОПКИ УПРАВЛЕНИЯ _________ */
+#play-pause {
+  width: 27px;
+  height: 27px;
+  background: rgba(245, 197, 6, .37);
+  border: 0;
+  display: flex;
+  align-items: center;
+  outline: none;
+}
+#play-pause img {
+  height: 17px;
+  opacity: .4;
+  padding-left: 4px;
+}
+#isPlaying {
+  display: none;
+}
+#isMuted {
+  display: none;
+}
+#mute {
+  width: 15px;
+  height: 15px;
+  margin-left: 31px;
+  margin-top: 6px;
+  background: 0;
+  border: 0;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* _________ 3 ICONS ________ */
+
+#icon-area {
+  box-shadow: 0 0 6px rgba(0,0,0,.7);
+  background-image: url("./assets/img/icon-area-bg.png");
+  z-index: 2;
+  display: grid;
+  grid-template: auto / repeat(3, 340px);
+  justify-content: center;
+  /* ____ DELETE COLOR ____ */
+  /* background-color: darkred; */
+}
+.icons-container {
+  margin: 0 auto;
+  width: 1020px;
+  height: 100%;
+  display: grid;
+  grid-template: auto / 1fr 1fr 1fr;
+}
+.icon-container {
+  border-right: 1px solid #d5d5d5;
+}
+.icon-container h2 {
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: 200;
+  text-transform: uppercase;
+  font-size: 27px;
+  letter-spacing: 0.01em;
 }
 
 
 
+.ic-co-1 {
+  border-left: 1px solid #d5d5d5;
+}
+.ic-co-1 img {
+  margin: 61px 0 0 112px;
+}
+.ic-co-1 h2 {
+  margin-top: 5px;
+  margin-left: 86px;
+}
+.ic-co-2 img {
+  margin: 37px 0 0 136px;
+}
+.ic-co-2 h2 {
+  margin-left: 111px;
+  margin-top: 9px;
+}
+.ic-co-3 img {
+  margin: 54px 0 0 119px;
+}
+.ic-co-3 h2 {
+  margin-left: 113px;
+  margin-top: 4px;
+}
+
+
+#news-area {
+  background: url(./assets/img/news-bg.png) no-repeat;
+  z-index: 1;
+  display: grid;
+  grid-template: 110px 319px 43px 15px / 1023px;
+  justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
 .footer {
-  /* ____ DELETE COLOR ____ */
-  /* background-color: rgb(221, 143, 143); */
   /* max-width: 1300px; */
   /* margin: auto; */
+  background: #4c4c4c;
   padding: 30px;
   color: #FFF;
+  /* ____ DELETE COLOR ____ */
+  /* background-color: rgb(221, 143, 143); */
 }
