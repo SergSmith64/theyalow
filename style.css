@@ -233,7 +233,7 @@ main {
   width: 100%;
   height: 8.4px;
   cursor: pointer;
-  animate: 0.2s;
+  /* animate: 0.2s; */
   background: linear-gradient(90deg, rgba(245,197,6,1) 0%, rgba(245,197,6,1) var(--place), rgba(245,197,6,0.28) var(--place), rgba(245,197,6,0.28) 100%);
   border-radius: 5px;
   height: 12px;
