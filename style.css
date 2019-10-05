@@ -394,21 +394,174 @@ main {
   padding-top: 16px;
 }
 
+.news-plus {
+  width: 11px;
+  height: 11px;
+  background: url("./assets/img/news-plus.svg") no-repeat;
+  border: 0;
+  outline: none;
+  opacity: .7;
+  transition: opacity .15s ease-in-out;
+  cursor: pointer;
+}
+.news-plus:hover {
+  opacity: 1;
+}
+.news-item-1 button {
+  float: right;
+  margin-right: 13px;
+  margin-top: 3px;
+}
+.news-item-1 video {
+  width: 100%;
+  height: 100%;
+}
+.news-item-1-date {
+  width: 113px!important;
+  background: #dcb102!important;
+}
+.news-item-1-date h2 {
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: bold;
+  font-size: 50px;
+  height: 53px;
+  line-height: 64px;
+  padding-top: 0;
+  padding-left: 31px;
+  margin: 0;
+  background: none;
+}
+.news-item-1-date h4 {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 20.5px;
+  line-height: 31px;
+  padding-left: 32px;
+  color: #ac641a;
+  letter-spacing: 0.04em;
+}
+.news-item-2 {
+  height: 233px;
+  background: #ed9e03;
+  display: grid;
+  grid-template: 11px 33px 15px 133px 17px 11px 13px / auto;
+}
+.news-item-2 h3 {
+  font-family: 'Segoe WP Light', sans-serif;
+  font-weight: 100;
+  color: white;
+  margin: 0;
+  font-size: 25px;
+  justify-self: right;
+  grid-row: 2;
+  padding-right: 17px;
+}
+.news-item-2 > img {
+  grid-row: 4;
+  padding-left: 84px;
+}
+.tweets {
+  display: none;
+}
+.news-item-2 button {
+  grid-row: 6;
+  justify-self: right;
+  padding-right: 14px;
+}
+#news-area input {
+  margin-top: 0;
+  width: 896px;
+  -webkit-appearance: none;
+  height: 15px;
+  background: rgba(255,255,255,.48);
+  border-radius: 25px;
+  margin-left: 73px;
+  outline: none;
+  grid-row: 4 / span 1;
+}
+#news-area input[type="range"]::-webkit-slider-thumb {
+  height: 16px;
+  width: 197px;
+  border-radius: 25px;
+  background: #EC9E03;
+  margin-top: 0px;
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+
+
+
+
+#pros-area {
+  background: url("./assets/img/pros-bg.png") no-repeat;
+  height: 100%;
+  grid-template: 37px 57px 344px / auto;
+  display: grid;
+  justify-content: center;
+}
+#pros-area > h2 {
+  font-family: 'PT Sans', sans-serif;
+  text-transform: uppercase;
+  color: #f4be02;
+  height: 57px;
+  margin: 0;
+  grid-row: 2;
+  line-height: 54px;
+  font-size: 42px;
+  font-weight: 100;
+  letter-spacing: 0.023em;
+  justify-self: center;
+  padding-left: 5px;
+}
+.pros-container {
+  margin: 0 auto;
+  display: grid;
+  width: 1025px;
+  grid-row: 3;
+  grid-template: auto / 562px auto;
+}
+
+#pros-area ul {
+  list-style: none;
+  padding-left: 111px;
+  padding-top: 73px;
+}
+#pros-area li {
+  color: #a5a5a5;
+  font-family: 'Segoe WP';
+  font-size: 24px;
+  font-weight: 100;
+  word-break: break-word;
+  line-height: 25px;
+  padding-bottom: 23px;
+}
+#pros-area li::before {
+  content: '';
+  width: 14px;
+  height: 14px;
+  background: #F5C506;
+  position: absolute;
+  border-radius: 20px;
+  margin-left: -33px;
+  margin-top: 6px;
+}
 
 
 
 
 
-
-
-
+.range-wrap {
+  margin-top: -80px;
+}
 
 
 .footer {
   max-width: 1300px;
   margin: auto;
   background: #4c4c4c;
-  padding: 30px;
+  padding: 8px 150px;
   color: #FFF;
   /* ____ DELETE COLOR ____ */
   /* background-color: rgb(221, 143, 143); */
