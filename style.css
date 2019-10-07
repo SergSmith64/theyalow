@@ -159,57 +159,32 @@ h2 {
 }
 
 
-
-/* ________ MAIN __________ */
-
-
-main {
-  width: 1300px;
-  margin: 0 auto;
-  display: grid;
-  color: #FFF;
-  /* ____ DELETE COLOR ____ */
-  /* background-color: lightseagreen; */
-}
-
-
 /* _______ ВИДЕО __________________________________________________________________ */
 
 
 .player {
-  height: 327px;
+  position: relative;
 }
 
-.play-btn-container {
-  display: flex;
-  justify-content: center;
-}
 .play-btn {
   width: 67px;
   height: 67px;
+  top: 131px;
+  left: 240px;
   background: #F5C506;
   opacity: .72;
-  border-radius: 40px;
-  border: 0;
-  outline: none;
-  cursor: pointer;
-  display: flex;
+  border-radius: 33px;
   margin-top:130px;
   align-items: center;
   justify-content: center;
-}
-.play-btn img {
-  padding-left: 6px;
-  height: 41px;
-}
-.player-controls {
+  position: absolute;
   z-index: 10;
-  display: grid;
-  grid-template: auto / 27px 428px auto;
-  padding-left: 29px;
-  opacity: 0.99;
-  transition: opacity .3s ease-in-out;
 }
+.play-btn a {
+  width: 100%;
+  height: 100%;
+}
+
 .video:hover .player-controls, .video:hover .play-btn {
   opacity: 0.99;
   transition: opacity .3s ease-in-out;
@@ -283,30 +258,27 @@ main {
   justify-content: center;
 }
 
-/* _________ 3 ICONS ________ */
+/* _________ 3 ICONS ________________________________________________________________ */
 
-#icon-area {
+.icons-wrapper {
   box-shadow: 0 0 6px rgba(0,0,0,.7);
-  background-image: url("./assets/img/icon-area-bg.png");
+  background: #f7f7f7 url("./assets/images/icons-bkg.png") no-repeat;
   z-index: 2;
-  display: grid;
-  grid-template: auto / repeat(3, 340px);
   justify-content: center;
   margin-top: 68px;
   /* ____ DELETE COLOR ____ */
   /* background-color: darkred; */
 }
-.icons-container {
+.icons {
   margin: 0 auto;
-  width: 1020px;
-  height: 100%;
-  display: grid;
-  grid-template: auto / 1fr 1fr 1fr;
+  width: 1300px;
+  height: 212px;
+  display: flex;
 }
-.icon-container {
+.icon-box {
   border-right: 1px solid #d5d5d5;
 }
-.icon-container h2 {
+.cloud-box {
   font-family: 'Segoe UI', sans-serif;
   font-weight: 200;
   color: #000;
@@ -316,33 +288,64 @@ main {
   padding-bottom: 31px;
 }
 
+.leaf-box {
+  width: 338px;
+}
+.plan-box {
+  width: 339px;
+  height: 212px;
+  border-right: 1px solid #d4d4d4;
+}
 
+.icon-box p {
+  font-size: 27px;
+  letter-spacing: 0.3px;
+  color: #000000;
+  font-family: "Segoe WP Light";
+  text-align: center;
+  text-transform: uppercase;
+}
 
-.ic-co-1 {
-  border-left: 1px solid #d5d5d5;
+.icon-cloud {
+  margin-top: 55px;
+  margin-left: -7px;
 }
-.ic-co-1 img {
-  margin: 61px 0 0 112px;
-}
-.ic-co-1 h2 {
-  margin-top: 5px;
-  margin-left: 86px;
-}
-.ic-co-2 img {
-  margin: 37px 0 0 136px;
-}
-.ic-co-2 h2 {
-  margin-left: 111px;
+
+.text-cloud {
   margin-top: 9px;
-}
-.ic-co-3 img {
-  margin: 54px 0 0 119px;
-}
-.ic-co-3 h2 {
-  margin-left: 113px;
-  margin-top: 4px;
+  margin-left: 18px;
 }
 
+.icon-leaf {
+  margin-top: 32px;
+  margin-left: 21px;
+}
+.text-leaf {
+  margin-top: 13px;
+  margin-left: 20px;
+}
+
+.icon-plan {
+  margin-top: 50px;
+  margin-left: -22px;
+}
+
+.text-plan {
+  margin-top: 8px;
+  margin-left: -15px;
+}
+
+.twit-wrapper {
+  position: relative;
+  width: 1300px;
+  height: 508px;
+  margin: 0 auto;
+  background-image: url("./assets/images/bkg-yellow.png");
+  background-position: top center;
+}
+
+
+/* _________________________________________________________________________ */
 
 #news-area {
   background: url(./assets/img/news-bg.png) no-repeat;
