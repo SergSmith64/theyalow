@@ -1,95 +1,102 @@
-* {
+body {
   margin: 0;
   padding: 0;
 }
-body {
-  /* ____ DELETE COLOR ____ */
-  /* background-color: rgb(240, 206, 231); */
-  background: calc(50vw - 650px) 0 url("./assets/img/background.jpg") no-repeat;
-  width: 100vw;
-  /* width: 100%; */
+h2 {
+  margin: 0;
 }
 
 
-.body_wrapper {
-  max-width: 1300px;
+
+
+.top_wrapper {
+  position: relative;
+  width: 1300px;
+  height: 539px;
   margin: 0 auto;
-  width: 100%;
-  overflow: hidden;
+  padding-top: 27px;
+  background-image: url("./assets/images/bkg-hider-video.png");
+  background-position: top center;
   /* ____ DELETE COLOR ____ */
   /* background-color: green; */
 }
 
 .header {
+  display: flex;
   width: 1020px;
   margin: 0 auto;
-  display: grid;
-  grid-template: auto / 316px 461px;
-  grid-gap: 243px;
+  justify-content: space-between;
   /* ____ DELETE COLOR ____ */
   /* background-color: rgb(210, 247, 151); */
 }
 
 .logo {
-  float: left;
   margin-top: 28px;
-  display: grid;
-  grid-template: auto / 83px auto;
+  display: flex;
+  width: 345px;
+  height: 85px;
+  justify-content: space-between;
 }
-.logo > * {
-  float: left;
-}
+
 .logo-text {
   font-family: "Lucida Sans", sans-serif;
   text-transform: uppercase;
   font-size: 41px;
   color: #FFFFFF;
-  margin: 23px 0 12px 4px;
+  margin-top: 25px;
+  margin-right: 33px;
   /* line-height: 1; */
-  /* letter-spacing: 0.005em; */
+  letter-spacing: 0.4px;
+  font-style: italic;
+  text-align: center;
+  text-transform: uppercase;
   /* text-shadow: 0 2px 0 rgba(0,0,0,.42); */
 }
 
 
-.nav-container {
+.nav-wrapper {
+  position: relative;
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
+  width: 461px;
 }
-.nav {
-  float: right;
+
+.nav-layer {
   width: 453px;
   height: 41px;
   background-color: #F5C506;
-  box-shadow: -4px -5px 0px rgba(245, 197, 6, 0.27), -8px -8px 0px rgba(245, 197, 6, .27);
-  display: grid;
-  grid-template: auto / 172px 133px 148px;
-  font-family: 'Segoe WP', sans-serif;
-  font-size: 17.05px;
-  line-height: 40px;
-  color: #9B7D08;
 }
-.nav a {
+.nav-layer-one {
   text-decoration: none!important;
 }
-.nav-item {
-  border-right: 2px solid rgba(112,112,112,.1);
+
+.nav-layer-two {
+  top: -5px;
+  left: -4px;
+  opacity: 0.27;
+}
+
+.nav-main {
+  border-right: 1px solid #dcb105;
   text-transform: uppercase;
   color: #9B7D08;
 }
-.nav-item:hover {
+.nav-main ul li a:hover {
   background-color: #fbd53e;
 }
 
-.about {
+/* _________________________________________________________________________ */
+
+.nav-main ul li a.about {
   background: 39px 11px url("./assets/img/top-menu_about.svg") no-repeat;
   text-indent: 69px;
 }
-.services {
+.nav-main ul li a.service {
   background: 15px 11px url("./assets/img/top-menu_services.svg") no-repeat;
   text-indent: 43px;
 }
-.contact {
+.nav-main ul li a.contact {
   background: 18px 11px url("./assets/img/top-menu_contact.svg") no-repeat;
   text-indent: 50px;
   border-right: 0;
@@ -166,22 +173,13 @@ main {
 }
 
 
-/* _______ ВИДЕО ________ */
-.video-container {
-  box-shadow: 0 0 5px rgba(0,0,0,.225);
-  /* ____ DELETE COLOR ____ */
-  /* background-color: darkred; */
-}
-#video {
-  position: absolute;
-  /* background: #000; */
-}
+/* _______ ВИДЕО __________________________________________________________________ */
+
 
 .player {
   height: 327px;
-  display: grid;
-  grid-template: 278px auto / auto;
 }
+
 .play-btn-container {
   display: flex;
   justify-content: center;
