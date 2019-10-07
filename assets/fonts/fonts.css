@@ -1,0 +1,55 @@
+@font-face {
+  font-family: "open_sansregular";
+  src: local("open_sansregular"), url("./assets/fonts/OpenSans-Regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PTN77F-webfont";
+  font-style: normal;
+  font-weight: normal;
+  src: local("PTN77F-webfont"), url("./assets/fonts/PTN77F-webfont.woff") format("woff");
+}
+
+@font-face{
+  font-family: "PTS55F-webfont";
+  font-style: normal;
+  font-weight: normal;
+  src: local("PTS55F-webfont"), url("./assets/fonts/PTS55F-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Segoe WP";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Segoe WP"), url("./assets/fonts/SegoeWP.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Segoe WP Light";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Segoe WP Light"), url("./assets/fonts/segoe-wp-light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Segoe UI Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Segoe UI Regular'), url('Segoe UI.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Segoe UI Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Segoe UI Bold'), url('Segoe UI Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: "Asap Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Asap-Regular"), url("./assets/fonts/Asap-Regular.woff") format("woff");
+}
