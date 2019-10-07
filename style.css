@@ -284,31 +284,27 @@ h2 {
 /* _________ 3 ICONS ________________________________________________________________ */
 
 .icons-wrapper {
-  box-shadow: 0 0 6px rgba(0,0,0,.7);
+  width: 1300px;
+  height: 212px;
   background: #f7f7f7 url("./assets/images/icons-bkg.png") no-repeat;
-  z-index: 2;
-  justify-content: center;
-  margin-top: 68px;
+  margin: 0 auto;
   /* ____ DELETE COLOR ____ */
   /* background-color: darkred; */
 }
 .icons {
   margin: 0 auto;
-  width: 1300px;
-  height: 212px;
+  width: 1022px;
+  justify-content: left;
   display: flex;
 }
 .icon-box {
-  border-right: 1px solid #d5d5d5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-left: 1px solid #d4d4d4;
 }
 .cloud-box {
-  font-family: 'Segoe UI', sans-serif;
-  font-weight: 200;
-  color: #000;
-  text-transform: uppercase;
-  font-size: 27px;
-  letter-spacing: 0.01em;
-  padding-bottom: 31px;
+  width: 340px;
 }
 
 .leaf-box {
@@ -401,120 +397,268 @@ h2 {
 }
 
 .news-wrapper {
-  background: url(./assets/img/news-bg.png) no-repeat;
-  z-index: 1;
+  position: relative;
   display: flex;
-  justify-content: center;
+  margin-top: 30px;
 }
 
 .news-block {
+  position: relative;
   display: flex;
-  grid-template: 233px 86px / 341px 315px;
 }
 .news-block-text {
-  background: #ed9e03;
   width: 286px;
   height: 187px;
-}
-.news-block-text p {
-  font-family: 'Segoe WP Light', sans-serif;
-  font-weight: 100;
+  padding: 15px 25px 30px 29px;
   font-size: 29px;
-  letter-spacing: 0.012em;
+  letter-spacing: 0.4px;
   line-height: 38px;
-  margin-top: 0;
-  color: #fff;
-  margin: 0px;
-  background: #ed9e03;
+  color: #ffffff;
+  font-family: "Segoe WP Light";
+  font-weight: 400;
+  background-color: #ec9e03;
+}
+
+.news-block-text p {
+  margin: 0;
   padding: 0;
 }
 
 .news-block-vid {
-  width: 11px;
-  height: 11px;
-  background: url("./assets/img/news-plus.svg") no-repeat;
-  border: 0;
-  outline: none;
-  opacity: .7;
-  transition: opacity .15s ease-in-out;
-  cursor: pointer;
+  justify-content: flex-start;
 }
 .news-block-vid video {
+  width: 315px;
+  height: 232px;
+}
+
+.news-block-vid .play-btn {
+  top: 92px;
+  left: 129px;
+  width: 61px;
+  height: 61px;
+  border-radius: 30px;
+}
+
+.news-block-vid .play-btn a img {
+  width: 17px;
+  height: 31px;
+}
+
+.news-block-twit {
+  display: flex;
+  width: 329px;
+  height: 232px;
+  margin-left: 35px;
+  justify-content: center;
+  align-items: center;
+  background-color: #ec9e03;
+}
+
+.news-block-twit img {
+  margin-left: -2px;
+  margin-top: 14px;
+}
+
+.twitter-logo {
+  width: 100%;
+  height: 100%;
+  background: url("./assets/images/twitter-ico.svg") no-repeat;
+  background-position: 85px 56px;
+}
+
+.twitter-rap {
+  display: none;
+}
+
+
+.plus {
+  position: absolute;
+  right: 26px;
+  bottom: 43px;
+  z-index: 10;
+  display: block;
+  height: 0;
+  width: 0;
+  opacity: 0.7;
+}
+
+.news-block-twit .plus {
+  right: 20px;
+  bottom: 38px;
+}
+
+.plus:hover {
   opacity: 1;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-#pros-area {
-  background: url("./assets/img/pros-bg.png") no-repeat;
-  height: 100%;
-  grid-template: 37px 57px 344px / auto;
-  display: grid;
-  justify-content: center;
-}
-#pros-area > h2 {
-  font-family: 'PT Sans', sans-serif;
-  text-transform: uppercase;
-  color: #f4be02;
-  height: 57px;
-  margin: 0;
-  grid-row: 2;
-  line-height: 54px;
-  font-size: 42px;
-  font-weight: 100;
-  letter-spacing: 0.023em;
-  justify-self: center;
-  padding-left: 5px;
-}
-.pros-container {
-  margin: 0 auto;
-  display: grid;
-  width: 1025px;
-  grid-row: 3;
-  grid-template: auto / 562px auto;
-}
-
-#pros-area ul {
-  list-style: none;
-  padding-left: 111px;
-  padding-top: 73px;
-}
-#pros-area li {
-  color: #a5a5a5;
-  font-family: 'Segoe WP';
-  font-size: 24px;
-  font-weight: 100;
-  word-break: break-word;
-  line-height: 25px;
-  padding-bottom: 23px;
-}
-#pros-area li::before {
-  content: '';
-  width: 14px;
-  height: 14px;
-  background: #F5C506;
+.num {
   position: absolute;
-  border-radius: 20px;
-  margin-left: -33px;
-  margin-top: 6px;
+  top: 10px;
+  right: 20px;
+  font-size: 25px;
+  font-family: "Segoe WP Light";
+  font-weight: 300;
+  letter-spacing: 0px;
+  color: #ffffff;
+}
+
+.date-month {
+  position: absolute;
+  top: 232px;
+  width: 113px;
+  height: 86px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #ddb101;
+}
+
+.date-month .date {
+  margin-left: 4px;
+  margin-top: 13px;
+  font-size: 51px;
+  letter-spacing: 1px;
+  line-height: 38px;
+  color: #ffffff;
+  font-family: "Segoe UI Bold";
+  font-weight: bold;
+}
+
+.date-month .month {
+  font-size: 21px;
+  letter-spacing: 0px;
+  line-height: 38px;
+  color: #b26529;
+  font-family: "Segoe UI";
+  text-transform: uppercase;
+}
+
+.range-line-tw {
+  position: absolute;
+  top: 361px;
+  left: 73px;
+  z-index: 10;
+  width: 896px;
+  height: 15px;
+  background-color: transparent;
+  border-radius: 21px;
+}
+
+.range-line-tw input {
+  z-index: 12;
+  border-radius: 21px;
+}
+
+/*  SCREENS SECTION____________________________________________  */
+
+.screens-wrapper {
+  width: 1300px;
+  height: 497px;
+  margin: 0 auto;
+  background-image: url("./assets/images/bkg-gray.png");
+  background-position: top center;
+}
+
+.screens {
+  width: 1020px;
+  height: 465px;
+  margin: 0 auto;
+  padding-top: 34px;
+}
+
+.screens h2 {
+  font-size: 43px;
+  letter-spacing: -1.4px;
+  color: #f5c506;
+  font-family: "open_sansregular";
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.cont-scr-wrapper {
+  position: relative;
+  display: flex;
+  width: 1020px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.cont-scr-wrapper .free {
+  position: absolute;
+  top: 3px;
+  left: -2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 116px;
+  height: 116px;
+  font-size: 19px;
+  letter-spacing: 0px;
+  color: #ffffff;
+  font-family: "PTN77F-webfont";
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 58px;
+  background-color: #f5c506;
+}
+
+.scr-list {
+  display: flex;
+  align-items: flex-start;
+  margin-left: 17px;
+  margin-top: 45px;
+}
+
+.tablet-img {
+  margin: 42px 0 0 25px;
+}
+
+.mobile-img {
+  margin: 153px 0 0 25px;
+}
+
+.text-list {
+  width: 400px;
+  margin-top: 67px;
+  font-size: 22px;
+  letter-spacing: 0px;
+  color: #a9a9a7;
+  font-family: "open_sansregular";
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.text-list ul {
+  padding-left: 37px;
+  list-style-image: url('./assets/images/yellow-cycle.svg');
+}
+
+.text-list ul li {
+  padding-left: 13px;
+}
+
+.text-list ul li:first-child {
+  margin-bottom: 24px;
+}
+
+.text-list ul li:nth-child(2) {
+  margin-bottom: 14px;
+}
+
+.text-list ul li:nth-child(3) {
+  margin-bottom: 24px;
 }
 
 
 
 
 
-.range-wrap {
-  margin-top: -80px;
-}
+
+
+
+
 
 /*  FOOTER SECTION ___________________________________________________ */
 
