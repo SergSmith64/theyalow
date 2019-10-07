@@ -6,9 +6,6 @@ h2 {
   margin: 0;
 }
 
-
-
-
 .top_wrapper {
   position: relative;
   width: 1300px;
@@ -31,11 +28,13 @@ h2 {
 }
 
 .logo {
-  margin-top: 28px;
   display: flex;
   width: 345px;
   height: 85px;
   justify-content: space-between;
+  background-image: url("./assets/images/logo-bottom.png");
+  background-position: 3px center;
+  background-repeat: no-repeat;
 }
 
 .logo-text {
@@ -56,10 +55,9 @@ h2 {
 
 .nav-wrapper {
   position: relative;
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
   width: 461px;
+  margin-top: 44px;
+  margin-right: -7px;
 }
 
 .nav-layer {
@@ -68,7 +66,9 @@ h2 {
   background-color: #F5C506;
 }
 .nav-layer-one {
-  text-decoration: none!important;
+  top: -8px;
+  left: -8px;
+  opacity: 0.27;
 }
 
 .nav-layer-two {
@@ -78,85 +78,69 @@ h2 {
 }
 
 .nav-main {
-  border-right: 1px solid #dcb105;
-  text-transform: uppercase;
-  color: #9B7D08;
+  font-size: 17px;
+  letter-spacing: 0px;
+  font-family: "Segoe WP";
 }
+.nav-main ul {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-main ul li {
+  display: inline-block;
+  height: 100%;
+}
+
+.nav-main ul li:nth-child(-n+2) {
+  border-right: 1px solid #dcb105;
+}
+.nav-main ul li a {
+  display: block;
+  position: relative;
+  color: #9b7d08;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 0;
+}
+
 .nav-main ul li a:hover {
-  background-color: #fbd53e;
+  opacity: 0.6;
 }
 
 /* _________________________________________________________________________ */
 
 .nav-main ul li a.about {
-  background: 39px 11px url("./assets/img/top-menu_about.svg") no-repeat;
-  text-indent: 69px;
+  padding: 7px 23px 10px 43px;
 }
+.nav-main ul li a.about img {
+  position: relative;
+  top: 3px;
+  left: -5px;
+}
+
 .nav-main ul li a.service {
-  background: 15px 11px url("./assets/img/top-menu_services.svg") no-repeat;
-  text-indent: 43px;
+  padding: 7px 18px 10px 13px;
 }
+.nav-main ul li a.service img {
+  position: relative;
+  top: 3px;
+  left: -5px;
+}
+
+
 .nav-main ul li a.contact {
-  background: 18px 11px url("./assets/img/top-menu_contact.svg") no-repeat;
-  text-indent: 50px;
-  border-right: 0;
+  padding: 7px 17px 10px 17px;
+}
+.nav-main ul li a.contact img {
+  position: relative;
+  top: 2px;
+  left: -4px;
 }
 
 
-
-
-.banners {
-  display: grid;
-  grid-template: auto / 549px 401px;
-  grid-gap: 50px;
-  margin-top: 56px;
-  justify-content: center;
-  /* ____ DELETE COLOR ____ */
-  /* background-color: lightpink; */
-}
-
-.h1_wrapper {
-  font-size: 40px;
-  font-family: "Asap Symbol", sans-serif;
-  color: #F5C506;
-  text-transform: uppercase;
-  text-align: center;
-  margin-top: 80px;
-}
-.h1_wrapper span {
-  color: #FFF;
-}
-
-/* ____________ УШКИ: ВЛЕВО - ВПРАВО _____________ */
-
-.ctrl-container {
-  position: absolute;
-  height: 57px;
-  top: 300px;
-}
-.ctrl {
-  width: 100vw;
-  height: 57px;
-  top: 300px;
-  margin: 0 auto;
-  max-width: 1300px;
-}
-.ctrl-i {
-  width: 32px;
-  height: 57px;
-  background-repeat: no-repeat;
-  border: 0;
-  outline: none;
-  cursor: pointer;
-}
-.ctrl-l {
-  float: left;
-  background: 8px url(./assets/img/icon-left.svg) rgba(245, 197, 6, .73) no-repeat;
-}
-.ctrl-r {
-  float: right;
-  background: 11px url(./assets/img/icon-right.svg) rgba(245, 197, 6, 1) no-repeat;
-}
 
 
 /* _______ ВИДЕО __________________________________________________________________ */
@@ -167,22 +151,22 @@ h2 {
 }
 
 .play-btn {
-  width: 67px;
-  height: 67px;
+  position: absolute;
   top: 131px;
   left: 240px;
-  background: #F5C506;
-  opacity: .72;
-  border-radius: 33px;
-  margin-top:130px;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
   z-index: 10;
+  width: 67px;
+  height: 67px;
+  background-color: #f5c506;
+  border-radius: 33px;
 }
+
 .play-btn a {
+  display: flex;
   width: 100%;
   height: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 .video:hover .player-controls, .video:hover .play-btn {
