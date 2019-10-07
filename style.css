@@ -169,78 +169,117 @@ h2 {
   align-items: center;
 }
 
-.video:hover .player-controls, .video:hover .play-btn {
-  opacity: 0.99;
-  transition: opacity .3s ease-in-out;
-}
-.player-controls input[type="range"] {
-  -webkit-appearance: none;
-  margin-top: 8px;
-  margin-left: 24px;
-  width: 404px;
-  background: rgba(245,197,6,0.28);
-  border-radius: 5px;
-  height: 12px;
-}
-.player-controls input[type="range"]:focus {
-  outline: none;
-}
-
-.player-controls input[type="range"]::-webkit-slider-runnable-track {
-  width: 100%;
-  height: 8.4px;
-  cursor: pointer;
-  /* animate: 0.2s; */
-  background: linear-gradient(90deg, rgba(245,197,6,1) 0%, rgba(245,197,6,1) var(--place), rgba(245,197,6,0.28) var(--place), rgba(245,197,6,0.28) 100%);
-  border-radius: 5px;
-  height: 12px;
-}
-.player-controls input[type="range"]::-webkit-slider-thumb {
-  height: 16px;
-  width: 16px;
-  border-radius: 3px;
-  background: rgba(0,0,0,0);
-  cursor: pointer;
-  -webkit-appearance: none;
-  margin-top: -14px;
-}
-.player-controls > * {
-  cursor: pointer;
-}
-
-/* ______ КНОПКИ УПРАВЛЕНИЯ _________ */
-#play-pause {
+.sound-sm-btn {
+  position: absolute;
+  top: 281px;
+  right: 16px;
+  z-index: 10;
   width: 27px;
   height: 27px;
-  background: rgba(245, 197, 6, .37);
-  border: 0;
+  background-color: transparent;
+}
+
+.sound-sm-btn a {
   display: flex;
-  align-items: center;
-  outline: none;
-}
-#play-pause img {
-  height: 17px;
-  opacity: .4;
-  padding-left: 4px;
-}
-#isPlaying {
-  display: none;
-}
-#isMuted {
-  display: none;
-}
-#mute {
-  width: 15px;
-  height: 15px;
-  margin-left: 31px;
-  margin-top: 6px;
-  background: 0;
-  border: 0;
-  outline: none;
-  display: flex;
-  align-items: center;
+  width: 100%;
+  height: 100%;
   justify-content: center;
+  align-items: center;
+  opacity: 0.7;
 }
+
+.sound-sm-btn a:hover,
+.play-sm-btn:hover,
+.play-sm-btn a:hover {
+  opacity: 1;
+}
+
+.play-btn:hover,
+.play-btn a:hover {
+  opacity: 0.7;
+}
+
+.play-btn img {
+  margin-left: 9px;
+}
+
+.video {
+  display: flex;
+  width: 1000px;
+  margin: 55px auto 0;
+  justify-content: space-between;
+}
+
+.video .desktop-vid {
+  width: 549px;
+  max-width: 549px;
+  height: 328px;
+  object-fit: auto;
+}
+
+.video .mob-vid {
+  display: none;
+}
+
+.video .motto {
+  font-size: 63px;
+  letter-spacing: 0.7px;
+  color: #ffffff;
+  font-family: "Asap Regular";
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.video .motto .motto-yellow {
+  margin-top: 79px;
+  margin-right: 24px;
+  color: #f5c506;
+}
+
+.video .motto .motto-white {
+  margin-top: 3px;
+  margin-right: 7px;
+  color: #ffffff;
+}
+
+.arr-btn {
+  position: absolute;
+  top: 300px;
+  width: 32px;
+  height: 57px;
+}
+
+.arr-btn a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5c506;
+}
+
+.arr-btn a:hover {
+  opacity: 0.6;
+}
+
+.arr-btn-left {
+  left: 0;
+}
+
+.arr-btn-left img {
+  margin-left: -3px;
+}
+
+.arr-btn-right {
+  right: 0;
+}
+
+.arr-btn-right img {
+  margin-right: -3px;
+}
+
+
 
 /* _________ 3 ICONS ________________________________________________________________ */
 
