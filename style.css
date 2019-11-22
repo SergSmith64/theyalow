@@ -54,6 +54,7 @@
   src: local("Asap-Regular"), url("./assets/fonts/Asap-Regular.woff") format("woff");
 }
 
+
 body {
   margin: 0;
   padding: 0;
@@ -62,7 +63,6 @@ body {
 h2 {
   margin: 0;
 }
-
 
 /*  HEADER SECTION  */
 
