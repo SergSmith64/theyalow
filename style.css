@@ -967,7 +967,7 @@ footer .logo-text {
   background: rgba(255, 255, 255, 0.48);
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1320px) {
 
   /*  HEADER SECTION  */
 .top-wrapper {
